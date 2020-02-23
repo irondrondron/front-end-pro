@@ -17,3 +17,7 @@ Conditions
 ## [Lesson 4](https://github.com/irondrondron/front-end-pro/tree/master/lesson4)
 
 Git. Basics
+
+## [Lesson 5](https://github.com/irondrondron/front-end-pro/tree/master/lesson5)
+
+Loops
