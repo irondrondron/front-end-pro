@@ -25,3 +25,7 @@ Loops
 ## [Lesson 6](https://github.com/irondrondron/front-end-pro/tree/master/lesson6)
 
 Objects
+
+## [Lesson 7](https://github.com/irondrondron/front-end-pro/tree/master/lesson7)
+
+Functions. Introduction
