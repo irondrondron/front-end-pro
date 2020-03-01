@@ -1,0 +1,31 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+
+html {
+  background-color: #333;
+}
+
+.grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-content: center;
+}
+
+button {
+  margin: 20px;
+  padding: 20px;
+  border: 3px solid #0086e0;
+  background-color: transparent;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #0086e0;
+  transition: all 0.5s;
+}
+button:hover {
+  border: 3px solid #00e09d;
+  color: #00e09d;
+}

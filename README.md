@@ -21,3 +21,7 @@ Git. Basics
 ## [Lesson 5](https://github.com/irondrondron/front-end-pro/tree/master/lesson5)
 
 Loops
+
+## [Lesson 6](https://github.com/irondrondron/front-end-pro/tree/master/lesson6)
+
+Objects
