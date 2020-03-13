@@ -29,3 +29,7 @@ Objects
 ## [Lesson 7](https://github.com/irondrondron/front-end-pro/tree/master/lesson7)
 
 Functions. Introduction
+
+## [Lesson 8](https://github.com/irondrondron/front-end-pro/tree/master/lesson8)
+
+Functions understanding
