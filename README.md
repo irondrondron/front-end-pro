@@ -33,3 +33,7 @@ Functions. Introduction
 ## [Lesson 8](https://github.com/irondrondron/front-end-pro/tree/master/lesson8)
 
 Functions understanding
+
+## [Lesson 9](https://github.com/irondrondron/front-end-pro/tree/master/lesson9)
+
+Prototypes
