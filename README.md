@@ -41,3 +41,7 @@ Prototypes
 ## [Lesson 10](https://github.com/irondrondron/front-end-pro/tree/master/lesson10)
 
 Callback
+
+## [Lesson 12](https://github.com/irondrondron/front-end-pro/tree/master/lesson12)
+
+Prototypes
