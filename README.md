@@ -49,3 +49,11 @@ Prototypes
 ## [Lesson 13](https://github.com/irondrondron/front-end-pro/tree/master/lesson13)
 
 Context
+
+## [Lesson 14](https://github.com/irondrondron/front-end-pro/tree/master/lesson14)
+
+Module pattern
+
+## [Lesson 15](https://github.com/irondrondron/front-end-pro/tree/master/lesson15)
+
+DOM Ready to react
