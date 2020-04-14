@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: Diablo;
   background-size: 100%;
-  
+
 }
 
 .grid {
@@ -29,8 +29,6 @@ body {
 }
 
 .card {
-  /* justify-content: center; */
-  /* align-content: center; */
   padding: 10px;
   justify-items: center;
   width: 300px;
@@ -48,16 +46,19 @@ body {
   height: 30px;
   border-radius: 15px;
 }
+
 .bar-title {
   text-align: center;
   position: relative;
   font-size: 25px;
   z-index: 10;
 }
+
 .health-value {
   color: #ff8686;
   user-select: none;
 }
+
 .mana-value {
   color: #3895ff;
   user-select: none;
@@ -69,8 +70,9 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .health-bar {
-  animation: all 2s ease;
+  transition: width 1s ease;
   z-index: 1;
   background: #9b0000;
   box-shadow: 0 0px 10px #9b0000, 0 0px 10px #9b0000;
@@ -86,7 +88,9 @@ body {
   overflow: hidden;
   position: relative;
 }
-.mana-wrap > .mana-bar {
+
+.mana-wrap>.mana-bar {
+  transition: width 0.5s ease;
   background: #003c81;
   box-shadow: 0 0px 10px #003c81, 0 0px 10px #003c81;
   left: 0;
@@ -101,11 +105,13 @@ body {
   color: #bd9e76;
   font-size: 30px;
 }
+
 .image {
   height: 200px;
   align-self: center;
 
 }
+
 .image-container {
   height: 100%;
   width: 100%;
@@ -113,9 +119,32 @@ body {
   display: grid;
   justify-content: center;
 }
-.image-container > img {
-  /* height: 200px; */
+
+.image-container>img {
   width: 100%;
   background-size: cover;
   align-self: center;
+}
+
+.inactive {
+  transition: filter 0.5s ease;
+  filter: brightness(0.2);
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+    transform: rotateZ(0deg) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateZ(-90deg) scale(0.5);
+  }
+}
+
+.delete {
+  animation-name: myAnimation;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
 }

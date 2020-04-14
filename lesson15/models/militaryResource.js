@@ -7,6 +7,7 @@ var MilitaryResource = (function () {
     this.maxMana = mana;
     this.elements = createMilitaryResource();
     this.initListeners();
+    this.deleteEl();
 
     this.elements.healthValue.innerText = `${this.health}/${this.maxHealth}`;
     this.elements.manaValue.innerText = `${this.mana}/${this.maxMana}`;
@@ -51,6 +52,13 @@ var MilitaryResource = (function () {
     return pathToImage;
   }
 
+  MilitaryResource.prototype.deleteEl = function() {
+    if(this.elements.healthValue <= 0) {
+      console.log("umer");
+      
+    }
+  }
+
   MilitaryResource.prototype.initListeners = function () {
     var self = this;
     this.elements.health.addEventListener("click", function () {
@@ -79,6 +87,16 @@ var MilitaryResource = (function () {
   };
 
   MilitaryResource.prototype.repaint = function () {
+    if(this.elements.healthBar.style.width <= "10%") {
+    this.elements.el.classList.add("delete");
+    var self = this;
+    setTimeout(function() {
+      self.elements.el.remove();
+    }, 900);
+    }
+    if(this.elements.manaBar.style.width <= "10%") {
+      this.elements.el.classList.add("inactive");
+    }
     this.elements.healthBar.style.width = `${calculatePercentFrom(this.health, this.maxHealth)}%`;
     this.elements.healthValue.innerText = `${Math.round(this.health)}/${this.maxHealth}`;
     this.elements.title.innerText = `${this.title}`;
@@ -89,6 +107,6 @@ var MilitaryResource = (function () {
   MilitaryResource.prototype.render = function (parent) {
     parent.appendChild(this.elements.el);
   };
-
+  
   return MilitaryResource;
 })();
