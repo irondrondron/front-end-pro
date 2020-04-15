@@ -7,7 +7,6 @@ var MilitaryResource = (function () {
     this.maxMana = mana;
     this.elements = createMilitaryResource();
     this.initListeners();
-    this.deleteEl();
 
     this.elements.healthValue.innerText = `${this.health}/${this.maxHealth}`;
     this.elements.manaValue.innerText = `${this.mana}/${this.maxMana}`;
@@ -50,13 +49,6 @@ var MilitaryResource = (function () {
         break;
     }
     return pathToImage;
-  }
-
-  MilitaryResource.prototype.deleteEl = function() {
-    if(this.elements.healthValue <= 0) {
-      console.log("umer");
-      
-    }
   }
 
   MilitaryResource.prototype.initListeners = function () {
