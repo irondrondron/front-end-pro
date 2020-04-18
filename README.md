@@ -57,3 +57,7 @@ Module pattern
 ## [Lesson 15](https://github.com/irondrondron/front-end-pro/tree/master/lesson15)
 
 DOM Ready to react
+
+## [Lesson 16](https://github.com/irondrondron/front-end-pro/tree/master/covid19)
+
+AJAX
