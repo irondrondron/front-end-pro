@@ -51,8 +51,6 @@ MilitaryResource.prototype.repaint = function () {
   if (this.mana < 1) {
     this.elements.el.classList.add("inactive");
   }
-  console.log(this.health);
-  
   this.elements.healthBar.style.width = `${calculatePercentFrom(this.health, this.maxHealth)}%`;
   this.elements.healthValue.innerText = `${Math.round(this.health)}/${this.maxHealth}`;
   this.elements.title.innerText = `${this.title}`;
