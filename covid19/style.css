@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background: #303030;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: #9b9b9b;
+}
+
+.grid {
+  display: grid;
+}
+
+#filter {
+  height: 200px;
+}
+
+#filter-form {
+  align-content: center;
+  justify-content: center;
+}
+
+input {
+  border: 0;
+  background-color: #303030;
+  color: #9b9b9b;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  caret-color: #9b9b9b;
+  font-size: 35px;
+  padding: 10px;
+  height: 40px;
+  width: 300px;
+  box-shadow: 0px 0px 14px 0px #000000b3;
+  transition: all 0.5s ease;
+}
+
+input:hover {
+  box-shadow: 0px 0px 34px 5px #000000b3;
+}
+
+input:focus{
+  outline: none;
+}
+
+.card {
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 14px 0px #000000b3;
+  background-color: #303030;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 34px 5px #000000b3;
+}
+
+.countryName {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mainInfo {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 20px;
+}
